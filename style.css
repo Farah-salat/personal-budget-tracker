@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.add-expense {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 20px;
+}
+
+#your-expenses {
+    background-color: lightgray;
+    padding: 20px;
+    margin: 20px;
+}
