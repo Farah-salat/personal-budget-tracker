@@ -1,29 +1,146 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Budget Tracker</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>My Budget Tracker</h1>
-    <p>Track your income and expenses in one place.</p>
+
+    <!-- Main Heading -->
+    <header>
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png" alt="Budget tracker icon" width="80">
+
+        <h1>My Budget Tracker</h1>
+
+        <p>Track your income and expenses in one place.</p>
+    </header>
+
+
+    <!-- Add Expense Form -->
     <section class="add-expense">
+
         <h2>Add Expense</h2>
-        <label for="expense-name">Expense Name:</label>
-        <input type="text" id="expense-name" placeholder="Enter expense name">
-        <label for="amount">Amount:</label>
-        <input type="number" id="amount" placeholder="Enter amount">
-        <label for="category">Category:</label>
-        <input type="text" id="category" placeholder="Enter category">
-        <section id="your-expenses">
-            <h2>Your Expenses</h2>
-            <p>No expenses yet</p>
-        </section>
+
+        <form>
+
+            <label for="expense-name">Expense Name:</label>
+            <input type="text" id="expense-name" placeholder="Enter expense name">
+
+            <label for="expense-amount">Amount (KSh):</label>
+            <input type="number" id="expense-amount" placeholder="Enter amount in KSh">
+
+            <label for="expense-category">Category:</label>
+
+            <select id="expense-category">
+
+                <option value="">Select a category</option>
+                <option value="food">Food</option>
+                <option value="transport">Transport</option>
+                <option value="rent">Rent</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="other">Other</option>
+
+            </select>
+
+            <button type="button">Add Expense</button>
+
+        </form>
+
     </section>
+
+
+    <!-- Your Expenses -->
+    <section class="expenses-section" id="your-expenses">
+
+        <h2>Your Expenses</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Amount (KSh)</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Groceries</td>
+                    <td>KSh 500</td>
+                    <td>Food</td>
+                    <td>2026-09-01</td>
+                </tr>
+
+                <tr>
+                    <td>Bus Fare</td>
+                    <td>KSh 100</td>
+                    <td>Transport</td>
+                    <td>2026-09-01</td>
+                </tr>
+
+                <tr>
+                    <td>House Rent</td>
+                    <td>KSh 15,000</td>
+                    <td>Rent</td>
+                    <td>2026-09-02</td>
+                </tr>
+
+                <tr>
+                    <td>Movie Ticket</td>
+                    <td>KSh 1,500</td>
+                    <td>Entertainment</td>
+                    <td>2026-09-02</td>
+                </tr>
+
+                <tr>
+                    <td>Lunch</td>
+                    <td>KSh 1,200</td>
+                    <td>Food</td>
+                    <td>2026-09-03</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+    <!-- How to Use -->
+    <details>
+
+        <summary>How to use this tracker</summary>
+
+        <p>
+            Enter the name of your expense, enter the amount in Kenyan
+            Shillings, and select a category from the dropdown menu.
+            Click the "Add Expense" button to add an expense.
+        </p>
+
+    </details>
+
+
+    <!-- Budgeting Video -->
+    <section class="video-section">
+
+        <h2>Budgeting Tips</h2>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y77B8kaRS1g"
+            title="How To Make A Budget - Budgeting For Beginners" frameborder="0" allowfullscreen>
+        </iframe>
+
+    </section>
+
 </body>
 
 </html>
