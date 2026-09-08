@@ -3,24 +3,67 @@
 <html lang="en">
 
 <head>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>My Budget Tracker</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
+
+
 </head>
 
 <body>
 
+
     <!-- Main Heading -->
     <header>
+
+        <div class="header-content">
+
+            <div class="header-text">
+
+                <h1>My Budget Tracker</h1>
+
+                <p>
+                    Track your income and expenses in one place.
+                </p>
+
+            </div>
+
+            <div class="header-image">
+
+                <img src="micheile-henderson-ZVprbBmT8QA-unsplash.jpg" alt="Budget tracker illustration" width="400">
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Budget Tracker Icon -->
+    <section class="tracker-intro">
+
         <img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png" alt="Budget tracker icon" width="80">
 
-        <h1>My Budget Tracker</h1>
+        <p>
+            Take control of your finances by recording and monitoring
+            your daily expenses.
+        </p>
 
-        <p>Track your income and expenses in one place.</p>
-    </header>
+    </section>
 
 
     <!-- Add Expense Form -->
@@ -30,26 +73,56 @@
 
         <form>
 
-            <label for="expense-name">Expense Name:</label>
+            <label for="expense-name">
+                Expense Name:
+            </label>
+
             <input type="text" id="expense-name" placeholder="Enter expense name">
 
-            <label for="expense-amount">Amount (KSh):</label>
+
+            <label for="expense-amount">
+                Amount (KSh):
+            </label>
+
             <input type="number" id="expense-amount" placeholder="Enter amount in KSh">
 
-            <label for="expense-category">Category:</label>
+
+            <label for="expense-category">
+                Category:
+            </label>
 
             <select id="expense-category">
 
-                <option value="">Select a category</option>
-                <option value="food">Food</option>
-                <option value="transport">Transport</option>
-                <option value="rent">Rent</option>
-                <option value="entertainment">Entertainment</option>
-                <option value="other">Other</option>
+                <option value="">
+                    Select a category
+                </option>
+
+                <option value="food">
+                    Food
+                </option>
+
+                <option value="transport">
+                    Transport
+                </option>
+
+                <option value="rent">
+                    Rent
+                </option>
+
+                <option value="entertainment">
+                    Entertainment
+                </option>
+
+                <option value="other">
+                    Other
+                </option>
 
             </select>
 
-            <button type="button">Add Expense</button>
+
+            <button type="button">
+                Add Expense
+            </button>
 
         </form>
 
@@ -64,49 +137,86 @@
         <table>
 
             <thead>
+
                 <tr>
+
                     <th>Name</th>
+
                     <th>Amount (KSh)</th>
+
                     <th>Category</th>
+
                     <th>Date</th>
+
                 </tr>
+
             </thead>
+
 
             <tbody>
 
                 <tr>
+
                     <td>Groceries</td>
+
                     <td>KSh 500</td>
+
                     <td>Food</td>
+
                     <td>2026-09-01</td>
+
                 </tr>
 
+
                 <tr>
+
                     <td>Bus Fare</td>
+
                     <td>KSh 100</td>
+
                     <td>Transport</td>
+
                     <td>2026-09-01</td>
+
                 </tr>
 
+
                 <tr>
+
                     <td>House Rent</td>
+
                     <td>KSh 15,000</td>
+
                     <td>Rent</td>
+
                     <td>2026-09-02</td>
+
                 </tr>
 
+
                 <tr>
+
                     <td>Movie Ticket</td>
+
                     <td>KSh 1,500</td>
+
                     <td>Entertainment</td>
+
                     <td>2026-09-02</td>
+
                 </tr>
 
+
                 <tr>
+
                     <td>Lunch</td>
+
                     <td>KSh 1,200</td>
+
                     <td>Food</td>
+
                     <td>2026-09-03</td>
+
                 </tr>
 
             </tbody>
@@ -119,7 +229,9 @@
     <!-- How to Use -->
     <details>
 
-        <summary>How to use this tracker</summary>
+        <summary>
+            How to use this tracker
+        </summary>
 
         <p>
             Enter the name of your expense, enter the amount in Kenyan
@@ -135,11 +247,12 @@
 
         <h2>Budgeting Tips</h2>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y77B8kaRS1g"
+        <iframe width="520" height="300" src="https://www.youtube.com/embed/Y77B8kaRS1g"
             title="How To Make A Budget - Budgeting For Beginners" frameborder="0" allowfullscreen>
         </iframe>
 
     </section>
+
 
 </body>
 
