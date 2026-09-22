@@ -1,352 +1,1085 @@
-/* ================================
+/* =========================================
+   SPENDWISE THEME
+   ========================================= */
+
+:root {
+
+    --brand-color: #173f5f;
+
+    --accent-color: #4caf50;
+
+    --surface-color: #ffffff;
+
+    --background-color: #eef3f7;
+
+    --primary-text: #263238;
+
+    --secondary-text: #607d8b;
+
+    --border-color: #d9e2ec;
+
+    --input-background: #f8fafc;
+
+    --hover-background: #e8f5e9;
+
+    --shadow: 0 4px 12px rgba(23, 63, 95, 0.08);
+
+}
+
+
+/* =========================================
    GENERAL PAGE STYLING
-================================ */
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
 
 body {
+
     font-family: "Open Sans", sans-serif;
+
     margin: 0;
-    padding: 30px;
-    background-color: #eef3f7;
-    color: #263238;
+
+    padding: 0;
+
+    background-color: var(--background-color);
+
+    color: var(--primary-text);
+
 }
 
 
-
-/* ================================
+/* =========================================
    TYPOGRAPHY
-================================ */
+   ========================================= */
 
 h1,
-h2 {
+h2,
+h3 {
+
     font-family: "Poppins", sans-serif;
+
+    color: var(--brand-color);
+
 }
+
 
 h1 {
-    color: #173f5f;
+
     font-size: 2.2rem;
+
     margin: 10px 0;
+
 }
+
 
 h2 {
-    color: #173f5f;
+
+    margin-top: 0;
+
     margin-bottom: 20px;
+
 }
 
 
+h3 {
 
-/* ================================
-   MAIN HEADING CARD
-================================ */
+    margin: 0;
 
-header {
-    background-color: #ffffff;
-    text-align: center;
+}
 
-    margin-bottom: 30px;
+
+/* =========================================
+   MAIN DASHBOARD GRID
+   ========================================= */
+
+.dashboard {
+
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 240px 1fr;
+
+}
+
+
+/* =========================================
+   SIDEBAR
+   ========================================= */
+
+.sidebar {
+
+    background-color: var(--brand-color);
+
+    color: #ffffff;
+
+    padding: 25px 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 100vh;
+
+}
+
+
+.sidebar-logo {
+
+    margin-bottom: 35px;
+
+}
+
+
+.sidebar-logo h2 {
+
+    color: #ffffff;
+
+    margin: 0;
+
+    font-size: 1.6rem;
+
+}
+
+
+.sidebar-logo p {
+
+    margin: 5px 0 0;
+
+    font-size: 0.8rem;
+
+    opacity: 0.75;
+
+}
+
+
+/* =========================================
+   SIDEBAR NAVIGATION
+   ========================================= */
+
+.navigation {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+
+.nav-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.nav-item:hover {
+
+    background-color: rgba(255, 255, 255, 0.15);
+
+    transform: translateX(3px);
+
+}
+
+
+.nav-item.active {
+
+    background-color: rgba(255, 255, 255, 0.18);
+
+}
+
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
+.main-content {
+
+    min-width: 0;
+
     padding: 30px;
 
-    border: 1px solid #d9e2ec;
+}
+
+
+/* =========================================
+   MAIN HEADER
+   ========================================= */
+
+header {
+
+    background-color: var(--surface-color);
+
+    margin-bottom: 30px;
+
+    padding: 30px;
+
+    border: 1px solid var(--border-color);
+
     border-radius: 12px;
 
-    box-shadow: 0 4px 12px rgba(23, 63, 95, 0.08);
+    box-shadow: var(--shadow);
+
 }
 
-/* Header layout - NEW */
+
 .header-content {
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     gap: 30px;
+
     flex-wrap: wrap;
+
 }
+
 
 .header-text {
+
     flex: 1;
+
     min-width: 250px;
-    text-align: left;
+
 }
+
+
+.welcome-text {
+
+    color: var(--accent-color);
+
+    font-weight: 600;
+
+    margin: 0;
+
+}
+
+
+.header-text h1 {
+
+    margin: 10px 0;
+
+}
+
+
+.header-text>p:last-child {
+
+    margin: 0;
+
+    color: var(--secondary-text);
+
+}
+
 
 .header-image {
+
     flex: 0 0 auto;
+
 }
+
 
 .header-image img {
+
     max-width: 100%;
+
     height: auto;
+
     border-radius: 8px;
+
     display: block;
-}
 
-header p {
-    margin: 0;
-    color: #607d8b;
 }
 
 
-
-/* ================================
-   TRACKER INTRO SECTION - NEW
-================================ */
+/* =========================================
+   TRACKER INTRO
+   ========================================= */
 
 .tracker-intro {
-    background-color: #ffffff;
+
+    background-color: var(--surface-color);
+
     padding: 20px;
+
     margin-bottom: 30px;
-    border: 1px solid #d9e2ec;
+
+    border: 1px solid var(--border-color);
+
     border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(23, 63, 95, 0.08);
+
+    box-shadow: var(--shadow);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+
 }
+
 
 .tracker-intro img {
-    margin-bottom: 15px;
+
+    flex: 0 0 auto;
+
 }
+
+
+.tracker-intro h2 {
+
+    margin-bottom: 8px;
+
+}
+
 
 .tracker-intro p {
+
     margin: 0;
-    color: #607d8b;
+
+    color: var(--secondary-text);
+
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 
 
+/* =========================================
+   SECTION HEADING
+   ========================================= */
 
-/* ================================
-   ADD EXPENSE CARD
-================================ */
+.section-heading {
 
-.add-expense {
-    background-color: #ffffff;
+    display: flex;
 
-    padding: 25px;
-    margin-bottom: 30px;
+    justify-content: space-between;
 
-    border: 1px solid #d9e2ec;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+.section-heading h2 {
+
+    margin-bottom: 5px;
+
+}
+
+
+.section-heading p {
+
+    margin: 0;
+
+    color: var(--secondary-text);
+
+}
+
+
+/* =========================================
+   CATEGORY GRID
+   ========================================= */
+
+.category-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+/* =========================================
+   CATEGORY CARDS
+   ========================================= */
+
+.category-card {
+
+    background-color: var(--surface-color);
+
+    border: 1px solid var(--border-color);
+
     border-radius: 12px;
 
-    box-shadow: 0 4px 12px rgba(23, 63, 95, 0.08);
+    padding: 20px;
+
+    min-height: 190px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    box-shadow: var(--shadow);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
 }
 
-/* Direct child selector */
-.add-expense>h2 {
-    margin-top: 0;
+
+/* Hover micro-interaction */
+
+.category-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 20px rgba(23, 63, 95, 0.14);
+
 }
 
 
+/* Keyboard focus micro-interaction */
 
-/* ================================
-   FORM STYLING
-================================ */
+.category-card:focus {
 
-form label {
+    outline: 3px solid var(--accent-color);
+
+    outline-offset: 3px;
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 20px rgba(23, 63, 95, 0.14);
+
+}
+
+
+/* =========================================
+   CARD CONTENT
+   ========================================= */
+
+.card-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.category-icon {
+
+    font-size: 30px;
+
+}
+
+
+.percentage {
+
+    color: var(--accent-color);
+
+    font-weight: 700;
+
+    font-size: 14px;
+
+}
+
+
+.card-content h3 {
+
+    margin-bottom: 5px;
+
+    font-size: 18px;
+
+}
+
+
+.card-content p {
+
+    margin: 0 0 8px;
+
+    color: var(--secondary-text);
+
+    font-size: 13px;
+
+}
+
+
+.card-content strong {
+
+    font-size: 22px;
+
+    color: var(--primary-text);
+
+}
+
+
+/* =========================================
+   PROGRESS BAR
+   ========================================= */
+
+.progress {
+
+    width: 100%;
+
+    height: 7px;
+
+    background-color: var(--border-color);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+}
+
+
+.progress span {
+
     display: block;
 
+    height: 100%;
+
+    background-color: var(--accent-color);
+
+    border-radius: 10px;
+
+}
+
+
+/* =========================================
+   ADD EXPENSE CARD
+   ========================================= */
+
+.add-expense {
+
+    background-color: var(--surface-color);
+
+    padding: 25px;
+
+    margin-top: 30px;
+
+    margin-bottom: 30px;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 12px;
+
+    box-shadow: var(--shadow);
+
+}
+
+
+.add-expense>h2 {
+
+    margin-top: 0;
+
+}
+
+
+/* =========================================
+   FORM STYLING
+   ========================================= */
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+form label {
+
     margin-top: 12px;
+
     margin-bottom: 6px;
 
     font-weight: 600;
-    color: #37474f;
+
+    color: var(--primary-text);
+
 }
+
 
 form input,
 form select {
-    display: block;
 
     width: 100%;
+
     max-width: 400px;
 
     padding: 12px;
 
     margin-bottom: 15px;
 
-    box-sizing: border-box;
-
     font-family: "Open Sans", sans-serif;
+
     font-size: 15px;
 
-    background-color: #f8fafc;
+    background-color: var(--input-background);
+
+    color: var(--primary-text);
 
     border: 1px solid #b0bec5;
+
     border-radius: 7px;
+
 }
 
-/* Negation pseudo-class */
-input:not([type="submit"]) {
-    border: 1px solid #b0bec5;
-    border-radius: 7px;
-}
 
-/* Focus state */
-input:focus,
-select:focus {
-    outline: 2px solid #4caf50;
+form input:focus,
+form select:focus {
+
+    outline: 2px solid var(--accent-color);
+
     outline-offset: 1px;
 
-    border-color: #4caf50;
+    border-color: var(--accent-color);
 
-    background-color: #ffffff;
+    background-color: var(--surface-color);
+
 }
 
 
-
-/* ================================
+/* =========================================
    BUTTON
-================================ */
+   ========================================= */
 
 button {
+
+    width: fit-content;
+
     padding: 12px 24px;
 
     margin-top: 5px;
 
-    background-color: #4caf50;
+    background-color: var(--accent-color);
+
     color: #ffffff;
 
     font-family: "Poppins", sans-serif;
+
     font-weight: 600;
 
     border: none;
+
     border-radius: 7px;
 
     cursor: pointer;
 
-    transition: background-color 0.2s ease,
+    transition:
+        background-color 0.2s ease,
         transform 0.2s ease;
+
 }
+
 
 button:hover {
+
     background-color: #388e3c;
+
     transform: translateY(-1px);
+
 }
 
 
+button:focus {
 
-/* ================================
+    outline: 3px solid var(--brand-color);
+
+    outline-offset: 2px;
+
+}
+
+
+/* =========================================
    EXPENSE TABLE CARD
-================================ */
+   ========================================= */
 
 .expenses-section {
-    background-color: #ffffff;
+
+    background-color: var(--surface-color);
 
     padding: 25px;
+
     margin-bottom: 30px;
 
-    border: 1px solid #d9e2ec;
+    border: 1px solid var(--border-color);
+
     border-radius: 12px;
 
-    box-shadow: 0 4px 12px rgba(23, 63, 95, 0.08);
+    box-shadow: var(--shadow);
+
 }
 
 
+/* =========================================
+   TABLE CONTAINER
+   ========================================= */
 
-/* ================================
+.table-container {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+}
+
+
+/* =========================================
    TABLE
-================================ */
+   ========================================= */
 
 table {
+
     width: 100%;
+
+    min-width: 600px;
 
     border-collapse: collapse;
 
-    overflow: hidden;
+    border: 1px solid var(--border-color);
 
-    border: 1px solid #d9e2ec;
 }
 
-/* Table cells */
-.expenses-section td {
+
+td {
+
     padding: 14px;
 
-    border: 1px solid #d9e2ec;
+    border: 1px solid var(--border-color);
 
     text-align: left;
+
 }
 
-/* Table headers */
+
 th {
+
     padding: 14px;
 
-    border: 1px solid #173f5f;
+    border: 1px solid var(--brand-color);
 
-    background-color: #173f5f;
+    background-color: var(--brand-color);
+
     color: #ffffff;
 
     font-family: "Poppins", sans-serif;
+
     font-weight: 600;
 
     text-align: left;
+
 }
 
-/* Alternating rows */
-tr:nth-child(even) {
-    background-color: #f3f7fa;
+
+tbody tr:nth-child(even) {
+
+    background-color: var(--input-background);
+
 }
 
-/* First row */
-tr:first-child {
+
+tbody tr:first-child {
+
     font-weight: bold;
+
 }
 
-/* Hover effect */
+
 tbody tr:hover {
-    background-color: #e8f5e9;
+
+    background-color: var(--hover-background);
+
 }
 
 
-
-/* ================================
+/* =========================================
    HOW TO USE
-================================ */
+   ========================================= */
 
 details {
-    background-color: #ffffff;
+
+    background-color: var(--surface-color);
 
     padding: 20px;
+
     margin-top: 30px;
 
-    border: 1px solid #d9e2ec;
+    border: 1px solid var(--border-color);
+
     border-radius: 12px;
 
-    box-shadow: 0 4px 12px rgba(23, 63, 95, 0.06);
+    box-shadow: var(--shadow);
+
 }
 
+
 summary {
+
     cursor: pointer;
 
     font-family: "Poppins", sans-serif;
+
     font-weight: 600;
 
-    color: #173f5f;
+    color: var(--brand-color);
+
 }
+
 
 details p {
-    color: #546e7a;
+
+    color: var(--secondary-text);
+
     line-height: 1.6;
+
 }
 
 
-
-/* ================================
+/* =========================================
    VIDEO SECTION
-================================ */
+   ========================================= */
 
 .video-section {
+
     margin-top: 30px;
 
     padding: 25px;
 
     text-align: center;
 
-    background-color: #ffffff;
+    background-color: var(--surface-color);
 
-    border: 1px solid #d9e2ec;
+    border: 1px solid var(--border-color);
+
     border-radius: 12px;
 
-    box-shadow: 0 4px 12px rgba(23, 63, 95, 0.06);
+    box-shadow: var(--shadow);
+
 }
 
+
 .video-section iframe {
+
     max-width: 100%;
 
     border-radius: 8px;
+
+}
+
+
+/* =========================================
+   DARK THEME
+   Only CSS variables are overridden
+   ========================================= */
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+
+        --brand-color: #102a43;
+
+        --accent-color: #4db6ac;
+
+        --surface-color: #243447;
+
+        --background-color: #15202b;
+
+        --primary-text: #f1f5f9;
+
+        --secondary-text: #b0bec5;
+
+        --border-color: #37474f;
+
+        --input-background: #1c2b38;
+
+        --hover-background: #29483f;
+
+        --shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   Below 768px
+   ========================================= */
+
+@media (max-width: 768px) {
+
+
+    /* ---------------------------------
+       Single-column dashboard
+    --------------------------------- */
+
+    .dashboard {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    /* ---------------------------------
+       Sidebar
+    --------------------------------- */
+
+    .sidebar {
+
+        min-height: auto;
+
+        padding: 18px;
+
+    }
+
+
+    .sidebar-logo {
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .navigation {
+
+        flex-direction: row;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .nav-item {
+
+        flex: 1;
+
+        justify-content: center;
+
+        min-width: 120px;
+
+    }
+
+
+    /* ---------------------------------
+       Main content
+    --------------------------------- */
+
+    .main-content {
+
+        padding: 20px;
+
+    }
+
+
+    /* ---------------------------------
+       Header
+    --------------------------------- */
+
+    .header-content {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .header-image {
+
+        width: 100%;
+
+    }
+
+
+    .header-image img {
+
+        width: 100%;
+
+        max-width: 400px;
+
+    }
+
+
+    /* ---------------------------------
+       Tracker intro
+    --------------------------------- */
+
+    .tracker-intro {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+    /* ---------------------------------
+       Category cards
+    --------------------------------- */
+
+    .category-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    /* ---------------------------------
+       Section heading
+    --------------------------------- */
+
+    .section-heading {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+
+    }
+
+
+    /* ---------------------------------
+       Form
+    --------------------------------- */
+
+    form input,
+    form select {
+
+        max-width: 100%;
+
+    }
+
+
 }
