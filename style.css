@@ -3,27 +3,16 @@
    ========================================= */
 
 :root {
-
     --brand-color: #173f5f;
-
     --accent-color: #4caf50;
-
     --surface-color: #ffffff;
-
     --background-color: #eef3f7;
-
     --primary-text: #263238;
-
     --secondary-text: #607d8b;
-
     --border-color: #d9e2ec;
-
     --input-background: #f8fafc;
-
     --hover-background: #e8f5e9;
-
     --shadow: 0 4px 12px rgba(23, 63, 95, 0.08);
-
 }
 
 
@@ -35,19 +24,12 @@
     box-sizing: border-box;
 }
 
-
 body {
-
     font-family: "Open Sans", sans-serif;
-
     margin: 0;
-
     padding: 0;
-
     background-color: var(--background-color);
-
     color: var(--primary-text);
-
 }
 
 
@@ -58,36 +40,22 @@ body {
 h1,
 h2,
 h3 {
-
     font-family: "Poppins", sans-serif;
-
     color: var(--brand-color);
-
 }
-
 
 h1 {
-
     font-size: 2.2rem;
-
     margin: 10px 0;
-
 }
-
 
 h2 {
-
     margin-top: 0;
-
     margin-bottom: 20px;
-
 }
 
-
 h3 {
-
     margin: 0;
-
 }
 
 
@@ -96,13 +64,9 @@ h3 {
    ========================================= */
 
 .dashboard {
-
     min-height: 100vh;
-
     display: grid;
-
     grid-template-columns: 240px 1fr;
-
 }
 
 
@@ -111,48 +75,28 @@ h3 {
    ========================================= */
 
 .sidebar {
-
     background-color: var(--brand-color);
-
     color: #ffffff;
-
     padding: 25px 18px;
-
     display: flex;
-
     flex-direction: column;
-
     min-height: 100vh;
-
 }
-
 
 .sidebar-logo {
-
     margin-bottom: 35px;
-
 }
-
 
 .sidebar-logo h2 {
-
     color: #ffffff;
-
     margin: 0;
-
     font-size: 1.6rem;
-
 }
 
-
 .sidebar-logo p {
-
     margin: 5px 0 0;
-
     font-size: 0.8rem;
-
     opacity: 0.75;
-
 }
 
 
@@ -161,52 +105,31 @@ h3 {
    ========================================= */
 
 .navigation {
-
     display: flex;
-
     flex-direction: column;
-
     gap: 8px;
-
 }
 
-
 .nav-item {
-
     display: flex;
-
     align-items: center;
-
     gap: 12px;
-
     padding: 12px;
-
     border-radius: 8px;
-
     color: #ffffff;
-
     text-decoration: none;
-
     transition:
         background-color 0.2s ease,
         transform 0.2s ease;
-
 }
-
 
 .nav-item:hover {
-
     background-color: rgba(255, 255, 255, 0.15);
-
     transform: translateX(3px);
-
 }
 
-
 .nav-item.active {
-
     background-color: rgba(255, 255, 255, 0.18);
-
 }
 
 
@@ -215,11 +138,8 @@ h3 {
    ========================================= */
 
 .main-content {
-
     min-width: 0;
-
     padding: 30px;
-
 }
 
 
@@ -228,90 +148,51 @@ h3 {
    ========================================= */
 
 header {
-
     background-color: var(--surface-color);
-
     margin-bottom: 30px;
-
     padding: 30px;
-
     border: 1px solid var(--border-color);
-
     border-radius: 12px;
-
     box-shadow: var(--shadow);
-
 }
-
 
 .header-content {
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     gap: 30px;
-
     flex-wrap: wrap;
-
 }
-
 
 .header-text {
-
     flex: 1;
-
     min-width: 250px;
-
 }
-
 
 .welcome-text {
-
     color: var(--accent-color);
-
     font-weight: 600;
-
     margin: 0;
-
 }
-
 
 .header-text h1 {
-
     margin: 10px 0;
-
 }
-
 
 .header-text>p:last-child {
-
     margin: 0;
-
     color: var(--secondary-text);
-
 }
-
 
 .header-image {
-
     flex: 0 0 auto;
-
 }
 
-
 .header-image img {
-
     max-width: 100%;
-
     height: auto;
-
     border-radius: 8px;
-
     display: block;
-
 }
 
 
@@ -320,52 +201,30 @@ header {
    ========================================= */
 
 .tracker-intro {
-
     background-color: var(--surface-color);
-
     padding: 20px;
-
     margin-bottom: 30px;
-
     border: 1px solid var(--border-color);
-
     border-radius: 12px;
-
     box-shadow: var(--shadow);
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     gap: 20px;
-
 }
-
 
 .tracker-intro img {
-
     flex: 0 0 auto;
-
 }
-
 
 .tracker-intro h2 {
-
     margin-bottom: 8px;
-
 }
 
-
 .tracker-intro p {
-
     margin: 0;
-
     color: var(--secondary-text);
-
     max-width: 600px;
-
 }
 
 
@@ -374,31 +233,19 @@ header {
    ========================================= */
 
 .section-heading {
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     margin-bottom: 20px;
-
 }
-
 
 .section-heading h2 {
-
     margin-bottom: 5px;
-
 }
 
-
 .section-heading p {
-
     margin: 0;
-
     color: var(--secondary-text);
-
 }
 
 
@@ -407,13 +254,9 @@ header {
    ========================================= */
 
 .category-grid {
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 20px;
-
 }
 
 
@@ -422,61 +265,34 @@ header {
    ========================================= */
 
 .category-card {
-
     background-color: var(--surface-color);
-
     border: 1px solid var(--border-color);
-
     border-radius: 12px;
-
     padding: 20px;
-
     min-height: 190px;
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: space-between;
-
     gap: 15px;
-
     box-shadow: var(--shadow);
-
     cursor: pointer;
-
     transition:
         transform 0.2s ease,
         box-shadow 0.2s ease;
-
 }
-
 
 /* Hover micro-interaction */
-
 .category-card:hover {
-
     transform: translateY(-4px);
-
-    box-shadow:
-        0 8px 20px rgba(23, 63, 95, 0.14);
-
+    box-shadow: 0 8px 20px rgba(23, 63, 95, 0.14);
 }
 
-
 /* Keyboard focus micro-interaction */
-
 .category-card:focus {
-
     outline: 3px solid var(--accent-color);
-
     outline-offset: 3px;
-
     transform: translateY(-4px);
-
-    box-shadow:
-        0 8px 20px rgba(23, 63, 95, 0.14);
-
+    box-shadow: 0 8px 20px rgba(23, 63, 95, 0.14);
 }
 
 
@@ -485,60 +301,35 @@ header {
    ========================================= */
 
 .card-top {
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
 }
-
 
 .category-icon {
-
     font-size: 30px;
-
 }
-
 
 .percentage {
-
     color: var(--accent-color);
-
     font-weight: 700;
-
     font-size: 14px;
-
 }
-
 
 .card-content h3 {
-
     margin-bottom: 5px;
-
     font-size: 18px;
-
 }
-
 
 .card-content p {
-
     margin: 0 0 8px;
-
     color: var(--secondary-text);
-
     font-size: 13px;
-
 }
 
-
 .card-content strong {
-
     font-size: 22px;
-
     color: var(--primary-text);
-
 }
 
 
@@ -547,30 +338,18 @@ header {
    ========================================= */
 
 .progress {
-
     width: 100%;
-
     height: 7px;
-
     background-color: var(--border-color);
-
     border-radius: 10px;
-
     overflow: hidden;
-
 }
 
-
 .progress span {
-
     display: block;
-
     height: 100%;
-
     background-color: var(--accent-color);
-
     border-radius: 10px;
-
 }
 
 
@@ -579,28 +358,17 @@ header {
    ========================================= */
 
 .add-expense {
-
     background-color: var(--surface-color);
-
     padding: 25px;
-
     margin-top: 30px;
-
     margin-bottom: 30px;
-
     border: 1px solid var(--border-color);
-
     border-radius: 12px;
-
     box-shadow: var(--shadow);
-
 }
 
-
 .add-expense>h2 {
-
     margin-top: 0;
-
 }
 
 
@@ -609,64 +377,37 @@ header {
    ========================================= */
 
 form {
-
     display: flex;
-
     flex-direction: column;
-
 }
-
 
 form label {
-
     margin-top: 12px;
-
     margin-bottom: 6px;
-
     font-weight: 600;
-
     color: var(--primary-text);
-
 }
-
 
 form input,
 form select {
-
     width: 100%;
-
     max-width: 400px;
-
     padding: 12px;
-
     margin-bottom: 15px;
-
     font-family: "Open Sans", sans-serif;
-
     font-size: 15px;
-
     background-color: var(--input-background);
-
     color: var(--primary-text);
-
     border: 1px solid #b0bec5;
-
     border-radius: 7px;
-
 }
-
 
 form input:focus,
 form select:focus {
-
     outline: 2px solid var(--accent-color);
-
     outline-offset: 1px;
-
     border-color: var(--accent-color);
-
     background-color: var(--surface-color);
-
 }
 
 
@@ -675,49 +416,29 @@ form select:focus {
    ========================================= */
 
 button {
-
     width: fit-content;
-
     padding: 12px 24px;
-
     margin-top: 5px;
-
     background-color: var(--accent-color);
-
     color: #ffffff;
-
     font-family: "Poppins", sans-serif;
-
     font-weight: 600;
-
     border: none;
-
     border-radius: 7px;
-
     cursor: pointer;
-
     transition:
         background-color 0.2s ease,
         transform 0.2s ease;
-
 }
-
 
 button:hover {
-
     background-color: #388e3c;
-
     transform: translateY(-1px);
-
 }
 
-
 button:focus {
-
     outline: 3px solid var(--brand-color);
-
     outline-offset: 2px;
-
 }
 
 
@@ -726,19 +447,12 @@ button:focus {
    ========================================= */
 
 .expenses-section {
-
     background-color: var(--surface-color);
-
     padding: 25px;
-
     margin-bottom: 30px;
-
     border: 1px solid var(--border-color);
-
     border-radius: 12px;
-
     box-shadow: var(--shadow);
-
 }
 
 
@@ -747,11 +461,8 @@ button:focus {
    ========================================= */
 
 .table-container {
-
     width: 100%;
-
     overflow-x: auto;
-
 }
 
 
@@ -760,66 +471,38 @@ button:focus {
    ========================================= */
 
 table {
-
     width: 100%;
-
     min-width: 600px;
-
     border-collapse: collapse;
-
     border: 1px solid var(--border-color);
-
 }
-
 
 td {
-
     padding: 14px;
-
     border: 1px solid var(--border-color);
-
     text-align: left;
-
 }
-
 
 th {
-
     padding: 14px;
-
     border: 1px solid var(--brand-color);
-
     background-color: var(--brand-color);
-
     color: #ffffff;
-
     font-family: "Poppins", sans-serif;
-
     font-weight: 600;
-
     text-align: left;
-
 }
-
 
 tbody tr:nth-child(even) {
-
     background-color: var(--input-background);
-
 }
-
 
 tbody tr:first-child {
-
     font-weight: bold;
-
 }
 
-
 tbody tr:hover {
-
     background-color: var(--hover-background);
-
 }
 
 
@@ -828,41 +511,24 @@ tbody tr:hover {
    ========================================= */
 
 details {
-
     background-color: var(--surface-color);
-
     padding: 20px;
-
     margin-top: 30px;
-
     border: 1px solid var(--border-color);
-
     border-radius: 12px;
-
     box-shadow: var(--shadow);
-
 }
-
 
 summary {
-
     cursor: pointer;
-
     font-family: "Poppins", sans-serif;
-
     font-weight: 600;
-
     color: var(--brand-color);
-
 }
 
-
 details p {
-
     color: var(--secondary-text);
-
     line-height: 1.6;
-
 }
 
 
@@ -871,64 +537,63 @@ details p {
    ========================================= */
 
 .video-section {
-
     margin-top: 30px;
-
     padding: 25px;
-
     text-align: center;
-
     background-color: var(--surface-color);
-
     border: 1px solid var(--border-color);
-
     border-radius: 12px;
-
     box-shadow: var(--shadow);
-
 }
 
-
 .video-section iframe {
-
     max-width: 100%;
-
     border-radius: 8px;
-
 }
 
 
 /* =========================================
-   DARK THEME
-   Only CSS variables are overridden
+   DARK THEME (High Contrast Slate & Emerald)
    ========================================= */
 
 @media (prefers-color-scheme: dark) {
-
     :root {
-
-        --brand-color: #102a43;
-
-        --accent-color: #4db6ac;
-
-        --surface-color: #243447;
-
-        --background-color: #15202b;
-
-        --primary-text: #f1f5f9;
-
-        --secondary-text: #b0bec5;
-
-        --border-color: #37474f;
-
-        --input-background: #1c2b38;
-
-        --hover-background: #29483f;
-
-        --shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-
+        --brand-color: #38bdf8;
+        --accent-color: #22c55e;
+        --surface-color: #1e293b;
+        --background-color: #0b0f19;
+        --primary-text: #f8fafc;
+        --secondary-text: #94a3b8;
+        --border-color: #334155;
+        --input-background: #0f172a;
+        --hover-background: #064e3b;
+        --shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
     }
 
+    /* Heading Contrast Overrides */
+    h1,
+    h2,
+    h3 {
+        color: var(--primary-text);
+    }
+
+    .sidebar-logo h2 {
+        color: #ffffff;
+    }
+
+    summary {
+        color: var(--brand-color);
+    }
+
+    th {
+        background-color: #0f172a;
+        border-color: var(--border-color);
+        color: var(--primary-text);
+    }
+
+    #total-budget-display {
+        color: var(--brand-color) !important;
+    }
 }
 
 
@@ -939,147 +604,73 @@ details p {
 
 @media (max-width: 768px) {
 
-
-    /* ---------------------------------
-       Single-column dashboard
-    --------------------------------- */
-
+    /* Single-column dashboard */
     .dashboard {
-
         grid-template-columns: 1fr;
-
     }
 
-
-    /* ---------------------------------
-       Sidebar
-    --------------------------------- */
-
+    /* Sidebar */
     .sidebar {
-
         min-height: auto;
-
         padding: 18px;
-
     }
-
 
     .sidebar-logo {
-
         margin-bottom: 20px;
-
     }
-
 
     .navigation {
-
         flex-direction: row;
-
         flex-wrap: wrap;
-
     }
-
 
     .nav-item {
-
         flex: 1;
-
         justify-content: center;
-
         min-width: 120px;
-
     }
 
-
-    /* ---------------------------------
-       Main content
-    --------------------------------- */
-
+    /* Main content */
     .main-content {
-
         padding: 20px;
-
     }
 
-
-    /* ---------------------------------
-       Header
-    --------------------------------- */
-
+    /* Header */
     .header-content {
-
         flex-direction: column;
-
         align-items: flex-start;
-
     }
-
 
     .header-image {
-
         width: 100%;
-
     }
-
 
     .header-image img {
-
         width: 100%;
-
         max-width: 400px;
-
     }
 
-
-    /* ---------------------------------
-       Tracker intro
-    --------------------------------- */
-
+    /* Tracker intro */
     .tracker-intro {
-
         flex-direction: column;
-
         text-align: center;
-
     }
 
-
-    /* ---------------------------------
-       Category cards
-    --------------------------------- */
-
+    /* Category cards */
     .category-grid {
-
         grid-template-columns: 1fr;
-
     }
 
-
-    /* ---------------------------------
-       Section heading
-    --------------------------------- */
-
+    /* Section heading */
     .section-heading {
-
         flex-direction: column;
-
         align-items: flex-start;
-
         gap: 10px;
-
     }
 
-
-    /* ---------------------------------
-       Form
-    --------------------------------- */
-
+    /* Form */
     form input,
     form select {
-
         max-width: 100%;
-
     }
-
-
 }
