@@ -1,33 +1,30 @@
-# SpendWise: Personal Budget Tracker
+# SpendWise — Personal Expense Tracker
 
-SpendWise is an interactive, web-based personal finance dashboard built using HTML, CSS, and vanilla JavaScript. It helps users establish monthly budget targets, track daily expenses, categorize expenditures, and monitor their remaining financial balance in real time.
+## Project Description
+SpendWise is a responsive web application designed to help users track daily expenses, categorize spending, and monitor their budget in real time. Built to transition from a local development environment to a live production site, SpendWise offers a clean, intuitive interface for managing personal finances.
 
----
+## Technologies Used
+* **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+* **Version Control:** Git & GitHub
+* **Hosting & Continuous Deployment:** Netlify
 
-## Technical Overview & Week 6 Improvements
+## GitHub Repository Information
+* **Repository URL:** [https://github.com](https://github.com)
+* **Visibility:** Public
 
-This week, SpendWise was evolved from a static page layout into a fully dynamic, event-driven web application. The primary technical additions include:
+## Live Netlify Website URL
+* **Live Website:** [https://netlify.app](https://netlify.app)
 
-- **Interactive State Management**: Replaced hardcoded values and static popups with real-time DOM form controls and structured data handling.
-- **Array-Based Expense Tracking**: Integrated dynamic array storage for recording, displaying, and removing expenses without reloads.
-- **Automated Summary Calculations**: Implemented loop-driven calculations for dynamic total expenses, category totals, and remaining balance updates.
-- **Custom High-Contrast Dark Theme**: Upgraded system dark mode styling (`prefers-color-scheme: dark`) with slate and emerald tones for accessible contrast across all dashboard components.
+## Deployment Process Summary
+1. **Deployment Readiness:** Verified that `index.html`, `style.css`, `script.js`, and the background image asset were properly organized in the root directory with clean relative file paths.
+2. **GitHub Integration:** Initialized a local Git repository, committed all SpendWise project files, and pushed the codebase to a public GitHub repository on the `main` branch.
+3. **Netlify Deployment & Custom Domain:** Imported the public GitHub repository into Netlify and updated the default subdomain to a custom project URL (`https://netlify.app`).
+4. **Continuous Deployment & Testing:** Made a visible text update in `index.html`, pushed the commit to GitHub, and confirmed that Netlify automatically rebuilt and updated the live website. Verified across desktop and mobile browsers that all styles, scripts, and assets load without errors.
 
----
+## Challenges Encountered During Deployment
+* **Custom Subdomain Availability:** Finding an available, meaningful `.netlify.app` subdomain required selecting a unique combination (`salat-spendwise`) rather than a generic single-word name.
+* **Production Path Verification:** Ensuring all asset filenames (`style.css`, `script.js`, and image files) matched exact case-sensitive relative paths so Netlify's Linux servers loaded every resource cleanly.
 
-## Technical Implementations
-
-### 1. How Conditionals Are Used
-Conditional statements (`if / else if / else`) govern validation rules and real-time budget health feedback:
-- **Input Validation**: Ensures budget targets and expense amounts are valid, positive numeric values before updating application state.
-- **Budget Decision Logic**: Dynamically evaluates the user's remaining balance relative to their total budget:
-  ```javascript
-  if (totalBudget === 0) {
-      budgetStatusBanner.textContent = "Please set your monthly budget to begin tracking.";
-  } else if (remainingBalance < 0) {
-      budgetStatusBanner.textContent = "⚠️ Warning: You have exceeded your allocated budget!";
-  } else if (remainingBalance <= totalBudget * 0.2) {
-      budgetStatusBanner.textContent = "⚡ Caution: You have spent over 80% of your budget.";
-  } else {
-      budgetStatusBanner.textContent = "✅ Great job! Your spending is within healthy limits.";
-  }
+## Lessons Learned
+* **Automated CI/CD Workflows:** Linking a GitHub repository directly to Netlify automates production deployments on every `git push`, removing the need for manual file uploads.
+* **Production vs. Local Testing:** Testing the live HTTPS URL across different devices confirms that visual assets, responsive CSS layouts, and JavaScript interactivity behave consistently outside a local folder.
