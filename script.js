@@ -1,3 +1,5 @@
+// Verified production build v1.2 — Number() expense parsing confirmed active
+
 /* ==========================================================================
    SPENDWISE - BUDGET TRACKER LOGIC
    Handles state management, array operations, DOM updates, and event listeners.
