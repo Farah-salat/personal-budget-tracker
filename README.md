@@ -9,11 +9,11 @@ SpendWise is a responsive web application designed to help users track daily exp
 * **Hosting & Continuous Deployment:** Netlify
 
 ## GitHub Repository Information
-* **Repository URL:** [https://github.com](https://github.com)
+* **Repository URL:** https://github.com/Farah-salat/personal-budget-tracker)
 * **Visibility:** Public
 
 ## Live Netlify Website URL
-* **Live Website:** [https://netlify.app](https://netlify.app)
+* **Live Website:** https://salat-spendwise.netlify.app/
 
 ## Deployment Process Summary
 1. **Deployment Readiness:** Verified that `index.html`, `style.css`, `script.js`, and the background image asset were properly organized in the root directory with clean relative file paths.
